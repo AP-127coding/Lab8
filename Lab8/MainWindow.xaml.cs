@@ -20,9 +20,29 @@ namespace Lab8
     /// </summary>
     public partial class MainWindow : Window
     {
+        Tank tank1 = new BaseTank(1, 1, 4);
+        Tank tank2 = new BaseTank(10, 10, 3);
+        Map map = new Map();
+        int x, y;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var window = Window.GetWindow(this);
+            window.KeyDown += Window_KeyDown;
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.M)
+            {
+                tank1.Shoot(map, tank2);
+                if (map.environments[3, 1].EnvHP == 0)
+                    b31.Source = _default1_1.Source;
+            }
         }
     }
 }

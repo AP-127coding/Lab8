@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1024" Width="1024">
+        Title="MainWindow" Height="1024" Width="1024" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
     <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -38,7 +38,7 @@
         </Grid.ColumnDefinitions>
 
         <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Margin="85,82,85,0" Grid.RowSpan="2" Background="Black">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,-1,-1,-1"/>
+            <Image x:Name="_default1_1" Source="/Defoltderevo.jpg" Margin="-1,-1,-1,-1"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Column="1" Grid.Row="1"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="1">
@@ -165,7 +165,7 @@
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="5" Grid.Row="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="3" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,85,1" Grid.Row="2" Grid.ColumnSpan="3" Source="/beton.jpg" Grid.RowSpan="2"/>
+        <Image x:Name="b31" RenderTransformOrigin="2.482,0.895" Margin="85,84,85,1" Grid.Row="2" Grid.ColumnSpan="3" Source="/beton.jpg" Grid.RowSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,85,2" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="4"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="4"/>

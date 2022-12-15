@@ -8,11 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="beton.jpg" />
     <None Remove="Brick.jpg" />
+    <None Remove="Defoltderevo.jpg" />
+    <None Remove="Lava.jpg" />
+    <None Remove="list.png" />
+    <None Remove="steklo.jpg" />
+    <None Remove="water.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="beton.jpg" />
     <Resource Include="Brick.jpg" />
+    <Resource Include="Defoltderevo.jpg" />
+    <Resource Include="Lava.jpg" />
+    <Resource Include="list.png" />
+    <Resource Include="steklo.jpg" />
+    <Resource Include="water.jpg" />
   </ItemGroup>
 
 </Project>

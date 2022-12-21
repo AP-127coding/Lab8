@@ -14,6 +14,7 @@
     <None Remove="Lava.jpg" />
     <None Remove="list.png" />
     <None Remove="steklo.jpg" />
+    <None Remove="tank_orange.png" />
     <None Remove="water.jpg" />
   </ItemGroup>
 
@@ -24,6 +25,7 @@
     <Resource Include="Lava.jpg" />
     <Resource Include="list.png" />
     <Resource Include="steklo.jpg" />
+    <Resource Include="tank_orange.png" />
     <Resource Include="water.jpg" />
   </ItemGroup>
 

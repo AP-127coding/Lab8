@@ -118,8 +118,10 @@ namespace Lab8
                             if (map.GetEnvironments(xtemp + 1, ytemp).EnvHP > 0)
                             {
                                 map.GetEnvironments(xtemp + 1, ytemp).Change(this);
+                                
                                 if (map.GetEnvironments(xtemp + 1, ytemp).EnvHP == 0)
                                 {
+                                    
                                     map.environments[xtemp + 1, ytemp] = map.GetEnvironments(1, 1);
                                     Console.WriteLine("Клетка стала дефолтной ");
                                 }

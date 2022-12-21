@@ -36,123 +36,53 @@
             <ColumnDefinition ></ColumnDefinition>
             <ColumnDefinition ></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Margin="85,82,85,0" Grid.RowSpan="2" Background="Black">
-            <Image x:Name="_default1_1" Source="/Defoltderevo.jpg" Margin="-1,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Column="1" Grid.Row="1"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="1">
-            <Image Source="/Defoltderevo.jpg" Margin="-3,-1,-3,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Height="85" Grid.Column="1">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,0,-1,-2" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="1" Grid.Column="8">
-            <Image Source="/Defoltderevo.jpg" Margin="0,0,-2,-2" Width="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="1" Grid.Column="6"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Column="6">
-            <Image Source="/Defoltderevo.jpg" Margin="0,1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Column="7">
-            <Image Source="/Defoltderevo.jpg"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,1,1,1" Background="Black" Width="85" Grid.Row="5"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="2" Grid.Column="9">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,0,0,0"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="0,1,0,1" Background="Black" Width="85" Grid.Row="3" Grid.Column="9">
-            <Image Source="/Defoltderevo.jpg" Margin="-3,-1,-2,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="2" Grid.Column="3">
-            <Image Source="/Defoltderevo.jpg" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,0" Background="Black" Width="85" Grid.Row="4" Grid.RowSpan="2">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,-1,-2,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="8" Grid.Column="1" Height="85">
-            <Image Source="/Defoltderevo.jpg" Margin="0,0,-1,0" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,82,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="8" Grid.Column="3">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,-1,-1,-2" Width="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="8" Grid.Column="9">
-            <Image Source="/Defoltderevo.jpg" Margin="0,0,0,-2"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="5">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,-1,-1,-4" Width="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="9" Grid.Column="9">
-            <Image Source="/Defoltderevo.jpg" Margin="-1,-1,-2,-4" Width="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="9" Grid.Column="3">
-            <Image Source="/Defoltderevo.jpg" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="0,84,0,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="9" Grid.Column="3">
-            <Image Source="/Defoltderevo.jpg" Margin="0,-1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,1,1,1" Background="Black" Width="85" Grid.Row="8">
-            <Image Source="/Defoltderevo.jpg" Margin="-2,-1,-3,-1" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Margin="85,84,1,1" Grid.RowSpan="2" Background="Black" Width="85" Grid.Row="6">
-            <Image Source="/Defoltderevo.jpg" Margin="-3,-1,-3,-1" Width="85" Height="85"/>
-        </Border>
-        <Image x:Name="brick1_1" HorizontalAlignment="Center" Height="89" VerticalAlignment="Center" Width="84" Source="/Brick.jpg" Grid.Column="7"/>
-        <Image x:Name="brick1_1_Copy" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="6"/>
-        <Image x:Name="brick1_1_Copy1" HorizontalAlignment="Left" Height="85" VerticalAlignment="Center" Width="90" Source="/Brick.jpg" Grid.Column="4" Grid.ColumnSpan="3" Margin="85,0,0,0"/>
-        <Image x:Name="brick1_1_Copy2" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="4"/>
-        <Image x:Name="brick1_1_Copy3" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="3"/>
-        <Image x:Name="brick1_1_Copy4" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="2"/>
-        <Image x:Name="brick1_1_Copy5" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="1"/>
-        <Image x:Name="brick1_1_Copy6" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="1"/>
-        <Image x:Name="brick1_1_Copy7" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="1"/>
-        <Image x:Name="brick1_1_Copy8" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="1"/>
-        <Image x:Name="brick1_1_Copy9" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="3"/>
-        <Image x:Name="brick1_1_Copy10" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="4"/>
-        <Image x:Name="brick1_1_Copy11" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg"/>
-        <Image x:Name="brick1_1_Copy12" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="86" Source="/Brick.jpg" Grid.Column="9"/>
-        <Image x:Name="brick1_1_Copy13" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="10"/>
+        <Image x:Name="brick0_7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="7"/>
+        <Image x:Name="brick0_6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="6"/>
+        <Image x:Name="brick0_5" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="5"/>
+        <Image x:Name="brick0_4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="4"/>
+        <Image x:Name="brick0_3" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="3"/>
+        <Image x:Name="brick0_2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="2"/>
+        <Image x:Name="brick0_1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="1"/>
+        <Image x:Name="brick1_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="1"/>
+        <Image x:Name="brick1_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.79"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.586"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="brick3_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="3"/>
+        <Image x:Name="brick4_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="4"/>
+        <Image x:Name="brick0_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg"/>
+        <Image x:Name="brick0_9" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="9"/>
+        <Image x:Name="brick0_10" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="10" Width="85" Height="85"/>
         <Image x:Name="brick1_1_Copy14" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11"/>
-        <Image x:Name="brick1_1_Copy15" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="8"/>
-        <Image x:Name="brick1_1_Copy16" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="2"/>
-        <Image x:Name="brick1_1_Copy17" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="3"/>
-        <Image x:Name="brick1_1_Copy18" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="4"/>
-        <Image x:Name="brick1_1_Copy19" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="9" Margin="0,82,0,0" Grid.RowSpan="2"/>
-        <Image x:Name="brick1_1_Copy20" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="9"/>
-        <Image x:Name="brick1_1_Copy21" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="8"/>
-        <Image x:Name="brick1_1_Copy22" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="6" Margin="0,84,0,0" Grid.RowSpan="3"/>
-        <Image x:Name="brick1_1_Copy23" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="5" Margin="0,1,0,0" Grid.RowSpan="2"/>
-        <Image x:Name="brick1_1_Copy24" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="6"/>
-        <Image x:Name="brick1_1_Copy25" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="10" Margin="0,82,0,0" Grid.RowSpan="2"/>
-        <Image x:Name="brick1_1_Copy26" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="10" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image x:Name="brick1_1_Copy27" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="10" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Column="2"/>
-        <Image x:Name="brick1_1_Copy28" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Grid.Row="10" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Column="3"/>
-        <Image x:Name="brick1_1_Copy29" HorizontalAlignment="Center" Height="88" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="4"/>
-        <Image x:Name="brick1_1_Copy30" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="5"/>
-        <Image x:Name="brick1_1_Copy31" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="6"/>
-        <Image x:Name="brick1_1_Copy32" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="7"/>
-        <Image x:Name="brick1_1_Copy33" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="8" RenderTransformOrigin="0.055,0.59"/>
-        <Image x:Name="brick1_1_Copy34" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="86" Source="/Brick.jpg" Grid.Row="11" Grid.Column="9"/>
-        <Image x:Name="brick1_1_Copy35" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="10"/>
-        <Image x:Name="brick1_1_Copy36" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="11" Grid.Column="11"/>
-        <Image x:Name="brick1_1_Copy37" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="9"/>
-        <Image x:Name="brick1_1_Copy38" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="0"/>
-        <Image x:Name="brick1_1_Copy39" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="8"/>
-        <Image x:Name="brick1_1_Copy40" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="7"/>
-        <Image x:Name="brick1_1_Copy41" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="6"/>
-        <Image x:Name="brick1_1_Copy42" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="5"/>
-        <Image x:Name="brick1_1_Copy43" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11" Grid.Row="10"/>
-        <Image x:Name="brick1_1_Copy44" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="2" Grid.Column="3"/>
-        <Image x:Name="brick1_1_Copy45" HorizontalAlignment="Center" Height="83" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Row="3" Grid.Column="2"/>
-        <Image x:Name="brick1_1_Copy46" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="1" Grid.Column="8"/>
-        <Image x:Name="brick1_1_Copy47" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="2" Grid.Column="8"/>
-        <Image x:Name="brick1_1_Copy48" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="3" Grid.Column="6"/>
-        <Image x:Name="brick1_1_Copy49" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="3" Grid.Column="5"/>
-        <Image x:Name="brick1_1_Copy50" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="6" Grid.Column="6"/>
-        <Image x:Name="brick1_1_Copy51" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="6" Grid.Column="5"/>
-        <Image x:Name="brick1_1_Copy52" HorizontalAlignment="Center" Height="85" VerticalAlignment="Top" Width="85" Source="/Brick.jpg" Margin="0,82,0,0" Grid.RowSpan="2" Grid.Row="9" Grid.Column="9"/>
-        <Image Source="/Defoltderevo.jpg" Margin="0,82,0,1" Grid.Column="2" Grid.RowSpan="2" Grid.Row="1" RenderTransformOrigin="0.864,0.699"/>
-        <Image Source="/Defoltderevo.jpg" Margin="1,84,1,1" Grid.Column="7" Grid.RowSpan="2" Grid.Row="1"/>
+        <Image x:Name="brick0_8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="8"/>
+        <Image x:Name="brick2_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="2"/>
+        <Image x:Name="brick3_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="3"/>
+        <Image x:Name="brick4_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="4"/>
+        <Image x:Name="brick9_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="9"/>
+        <Image x:Name="brick8_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="8"/>
+        <Image x:Name="brick5_0" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/Brick.jpg" Grid.Row="5" Margin="0,1,0,0"/>
+        <Image x:Name="brick6_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="6"/>
+        <Image x:Name="brick11_4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="4"/>
+        <Image x:Name="brick11_5" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="5"/>
+        <Image x:Name="brick11_6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="6"/>
+        <Image x:Name="brick11_7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="7"/>
+        <Image x:Name="brick11_8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="8" RenderTransformOrigin="0.055,0.59"/>
+        <Image x:Name="brick11_9" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="9"/>
+        <Image x:Name="brick11_10" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="10"/>
+        <Image x:Name="brick11_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="11"/>
+        <Image x:Name="brick9_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="9"/>
+        <Image x:Name="brick8_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="8"/>
+        <Image x:Name="beton7_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="7"/>
+        <Image x:Name="brick6_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="6"/>
+        <Image x:Name="brick5_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="5"/>
+        <Image x:Name="brick10_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="10"/>
+        <Image x:Name="brick3_2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="3" Grid.Column="2"/>
         <Image Grid.ColumnSpan="2" Grid.RowSpan="2" RenderTransformOrigin="2.482,0.895" Margin="85,85,0,1" Grid.Column="2"/>
         <Image Grid.ColumnSpan="2" RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Column="2" Grid.Row="1"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,2" Grid.Column="5" Grid.Row="1" Grid.RowSpan="2"/>
@@ -160,178 +90,159 @@
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="1"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="1,1,1,1" Grid.Column="4" Grid.Row="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="83,1,84,0" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="3" Source="/Lava.jpg" Width="85" Height="87"/>
         <Image Grid.ColumnSpan="2" RenderTransformOrigin="2.482,0.895" Margin="85,2,1,0" Grid.Column="3" Grid.Row="1" OpacityMask="#FF0C0C10"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="5" Grid.Row="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="3" Grid.ColumnSpan="3"/>
-        <Image x:Name="b31" RenderTransformOrigin="2.482,0.895" Margin="85,84,85,1" Grid.Row="2" Grid.ColumnSpan="3" Source="/beton.jpg" Grid.RowSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,85,2" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="4"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="4"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="5" Source="/water.jpg" Width="85" Height="85"/>
+        <Image x:Name="water5_2" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="5" Source="/water.jpg"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="5"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Column="5" Grid.Row="5" Source="/steklo.jpg" Width="85" Height="85" Grid.RowSpan="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="5" Grid.Row="5"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="8" Grid.Row="5"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="4" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="4" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,1,1" Grid.Column="9" Grid.Row="4" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Image x:Name="beton5_8" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="8" Grid.Row="5" Source="/beton.jpg"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="3"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="84,1,0,1" Grid.Column="8" Grid.Row="5" Grid.ColumnSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="5" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,1,1" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="6"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,1,1" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="6"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="6" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Column="7" Grid.Row="6" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="6" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="6" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="7" Grid.ColumnSpan="3"/>
+        <Image x:Name="beton6_3" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="6" Source="/beton.jpg"/>
+        <Image x:Name="glass6_6" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="6" Source="/steklo.jpg"/>
+        <Image x:Name="water6_9" RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="6" Grid.ColumnSpan="2" Source="/water.jpg"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,85,2" Grid.Column="9" Grid.Row="6" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,0" Grid.Column="7" Grid.Row="7" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,0" Grid.Column="6" Grid.Row="7" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="7"/>
+        <Image x:Name="beton8_2" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="8" Source="/beton.jpg"/>
+        <Image x:Name="beton7_3" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="7" Source="/beton.jpg"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="3" Grid.Row="8" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="6" Grid.Row="8" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Column="7" Grid.Row="8" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="8" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,85,1" Grid.Column="9" Grid.Row="8" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="9" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,0,2" Grid.Column="7" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,2,85,0" Grid.Column="6" Grid.Row="9" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="6" Grid.Row="9" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,2,0,0" Grid.Column="4" Grid.Row="9" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,2" Grid.Column="3" Grid.Row="8" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,85,2" Grid.Row="8" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="84,1,1,1" Grid.Row="10" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Row="10" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,1,0,1" Grid.Row="10" Grid.ColumnSpan="2" Grid.Column="4"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Row="10" Grid.ColumnSpan="2" Grid.Column="6"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,85,2" Grid.Row="9" Grid.ColumnSpan="3" Grid.Column="6" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,0,2" Grid.Row="9" Grid.ColumnSpan="2" Grid.Column="7" Grid.RowSpan="2"/>
-        <Border BorderBrush="#FF020202" BorderThickness="1" Background="Black" Grid.Column="3" Margin="0,84,0,0" Grid.RowSpan="2">
-            <Image Source="/list.png" Margin="0,1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="4" Grid.Row="1" OpacityMask="Black" Background="Black">
-            <Image Source="/list.png"/>
-        </Border>
+        <Image x:Name="water7_2" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="2" Grid.Row="7" Source="/water.jpg"/>
+        <Image x:Name="beton8_3" RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="3" Grid.Row="8" Source="/beton.jpg"/>
+        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="6" Grid.Row="8" Source="/Defoltderevo.jpg"/>
+        <Image x:Name="beton8_9" RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="9" Grid.Row="8" Grid.ColumnSpan="2" Source="/beton.jpg"/>
+        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Column="6" Grid.Row="9" Grid.ColumnSpan="2" Source="/Defoltderevo.jpg"/>
+        <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,85,1" Grid.Row="10" Grid.ColumnSpan="2" Grid.Column="6" Source="/Defoltderevo.jpg"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="5" Grid.Row="1"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="5" OpacityMask="Black" Background="Black" Margin="0,84,0,0" Grid.RowSpan="2">
-            <Image Source="/list.png" Margin="-2,0,-1,0" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="0,84,0,0" Grid.RowSpan="2">
-            <Image Source="/list.png" Margin="0,1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="1,84,85,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1">
-            <Image Source="/list.png" Margin="0,1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="5" OpacityMask="Black" Background="Black" Margin="0,84,0,0" Grid.RowSpan="2" Grid.Row="1">
-            <Image Source="/list.png" Margin="0,1,0,-1" Width="85" Height="85"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="3" OpacityMask="Black" Background="Black" Margin="85,84,85,0" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="3">
-            <Image Source="/list.png" Margin="0,1,1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="3" OpacityMask="Black" Background="Black" Margin="0,84,85,0" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="4" OpacityMask="Black" Background="Black" Margin="85,84,1,0" Grid.RowSpan="2" Grid.Row="2" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="1,1,85,83" Grid.RowSpan="2" Grid.Row="3" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="-1,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="4" OpacityMask="Black" Background="Black" Margin="84,83,1,1" Grid.RowSpan="2" Grid.Row="7" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="5" OpacityMask="Black" Background="Black" Margin="0,84,0,0" Grid.RowSpan="2" Grid.Row="8">
-            <Image Source="/list.png" Margin="0,1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="1,1,85,83" Grid.RowSpan="2" Grid.Row="9" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="85,1,1,83" Grid.RowSpan="2" Grid.Row="9" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="8" OpacityMask="Black" Background="Black" Margin="0,1,0,83" Grid.RowSpan="2" Grid.Row="9">
-            <Image Source="/list.png" Margin="0,-1,0,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="7" OpacityMask="Black" Background="Black" Margin="85,1,1,83" Grid.RowSpan="2" Grid.Row="10" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,-1,-1,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="7" OpacityMask="Black" Background="Black" Margin="1,1,1,83" Grid.RowSpan="2" Grid.Row="10">
-            <Image Source="/list.png" Margin="0,-1,-2,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="1,1,1,83" Grid.RowSpan="2" Grid.Row="10">
-            <Image Source="/list.png" Margin="0,-1,-2,-1"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="5" OpacityMask="Black" Background="Black" Margin="1,84,0,0" Grid.RowSpan="2" Grid.Row="9">
-            <Image Source="/list.png" Margin="0,1,-1,-1"/>
-        </Border>
-        <Image Source="/list.png" Margin="83,1,83,1" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="6" OpacityMask="Black" Background="Black" Margin="1,1,85,83" Grid.RowSpan="2" Grid.Row="8" Grid.ColumnSpan="2">
-            <Image Source="/list.png" Margin="0,-1,-1,-1"/>
-        </Border>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="84,84,84,1" Grid.Column="9" Grid.ColumnSpan="3" Source="/Lava.jpg" Grid.RowSpan="2" Width="85" Height="85"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,83,1,83" Grid.Column="9" Grid.Row="1" Grid.ColumnSpan="2" Source="/Lava.jpg" Grid.RowSpan="3" Width="85"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,82,85,0" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Source="/Lava.jpg" Grid.RowSpan="2" Width="85"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,83,1,83" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="2" Source="/Lava.jpg" Grid.RowSpan="3" Width="85"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,85,83" Grid.Row="9" Grid.ColumnSpan="2" Source="/Lava.jpg" Grid.RowSpan="3" Width="85" Grid.Column="1"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,84,83" Grid.Column="2" Grid.Row="5" Source="/water.jpg" Width="85" Height="85" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,83,0,0" Grid.Column="2" Grid.Row="6" Source="/water.jpg" Width="85" Height="85" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,84,83" Grid.Column="3" Grid.Row="4" Source="/water.jpg" Height="85" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,1" Grid.Column="9" Grid.Row="4" Source="/water.jpg" Width="85" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,83,85,1" Grid.Column="9" Grid.Row="5" Source="/water.jpg" Width="85" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Border BorderThickness="1" Grid.Column="5" Background="#FF111010" Margin="0,84,0,0" Grid.Row="1" Height="85" Width="85"/>
+        <Image RenderTransformOrigin="2.482,0.895" Margin="84,84,84,1" Grid.Column="9" Grid.ColumnSpan="3" Source="/Lava.jpg" Width="85" Height="85" Grid.Row="1"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Column="9" Grid.Row="6" Source="/water.jpg" Grid.RowSpan="3" Width="85"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,1" Grid.Column="8" Grid.Row="6" Source="/water.jpg" Width="85" Grid.RowSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,2,85,83" Grid.Column="9" Grid.Row="7" Source="/water.jpg" Width="85" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Image x:Name="water7_9" RenderTransformOrigin="2.482,0.895" Margin="1,2,85,83" Grid.Column="9" Grid.Row="7" Source="/water.jpg" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
         <Image RenderTransformOrigin="2.482,0.895" Margin="0,1,0,1" Grid.Column="5" Grid.Row="5"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Column="6" Grid.Row="5" Source="/steklo.jpg" Width="85" Height="85" Grid.RowSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Column="6" Grid.Row="4" Source="/steklo.jpg" Width="85" Height="85" Grid.RowSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Column="5" Grid.Row="4" Source="/steklo.jpg" Width="85" Height="85" Grid.RowSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,85,83" Grid.Row="3" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="1"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,1,83" Grid.Row="3" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="3" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="3" Source="/beton.jpg" Height="85" Width="85" Grid.Column="3" Grid.RowSpan="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="4"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,1,83" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="5" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="84,84,1,83" Grid.Row="6" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="7" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="4" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,82,1,1" Grid.Row="7" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="7" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,82,1,1" Grid.Row="7" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="8" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="3"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,85,83" Grid.Row="2" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,83,85,0" Grid.Row="3" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="3" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,83,85,0" Grid.Row="3" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="9"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="4" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,85,83" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,84,0,83" Grid.Row="5" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,1,83" Grid.Row="6" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="6"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,84,85,83" Grid.Row="7" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="7"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,83,84,0" Grid.Row="7" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="8"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,83,0,0" Grid.Row="7" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="9"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,82,1,1" Grid.Row="7" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="9"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,1,83" Grid.Row="6" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="9"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="85,84,1,83" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="3" Grid.Column="9"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="10"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="1,82,85,1" Grid.Row="3" Grid.ColumnSpan="2" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="10"/>
-        <Image RenderTransformOrigin="2.482,0.895" Margin="0,82,0,1" Grid.Row="8" Source="/beton.jpg" Height="85" Width="85" Grid.RowSpan="2" Grid.Column="9"/>
+        <Image x:Name="beton5_4" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="4"/>
+        <Image x:Name="beton7_4" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="7" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="4" Grid.ColumnSpan="2"/>
+        <Image x:Name="beton5_7" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="7"/>
+        <Image x:Name="beton5_10" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="10"/>
+        <Image x:Name="wood1_1" Grid.Row="1" Grid.Column="1" Source="/Defoltderevo.jpg">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Defoltderevo.jpg" TileMode="None"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image Grid.Row="1" Grid.Column="2" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="2" Grid.Column="1" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="2" Grid.Column="2" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="1" Grid.Column="7" Source="/Defoltderevo.jpg"/>
+        <Image Source="/Defoltderevo.jpg" Grid.Row="1" Grid.Column="8"/>
+        <Image Grid.Row="2" Grid.Column="7" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="2" Grid.Column="9" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="3" Grid.Column="4" Source="/Defoltderevo.jpg"/>
+        <Image Source="/Defoltderevo.jpg" Grid.Row="3" Grid.Column="9"/>
+        <Image Grid.Row="3" Grid.Column="10" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="5" Grid.Column="1" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="6" Grid.Column="1" Source="/Defoltderevo.jpg"/>
+        <Image Source="/Defoltderevo.jpg" Grid.Row="7" Grid.Column="1"/>
+        <Image Grid.Row="8" Grid.Column="1" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="9" Grid.Column="2" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="9" Grid.Column="4" Source="/Defoltderevo.jpg"/>
+        <Image Source="/Defoltderevo.jpg" Grid.Row="10" Grid.Column="3"/>
+        <Image Grid.Row="10" Grid.Column="4" Source="/Defoltderevo.jpg"/>
+        <Image Source="/Defoltderevo.jpg" Grid.Row="9" Grid.Column="10"/>
+        <Image Grid.Row="10" Grid.Column="10" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Grid.Row="1" Grid.Column="3" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Grid.Row="1" Grid.Column="4" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Source="/Defoltderevo.jpg" Grid.Row="1" Grid.Column="5"/>
+        <Image Height="85" Width="85" Grid.Row="1" Grid.Column="6" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Source="/Defoltderevo.jpg" Grid.Row="2" Grid.Column="3"/>
+        <Image Height="85" Width="85" Grid.Row="2" Grid.Column="4" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Source="/Defoltderevo.jpg" Grid.Row="2" Grid.Column="5"/>
+        <Image Height="85" Width="85" Grid.Row="2" Grid.Column="6" Source="/Defoltderevo.jpg"/>
+        <Image Height="85" Width="85" Source="/Defoltderevo.jpg" Grid.Row="3" Grid.Column="5"/>
+        <Image Height="85" Width="85" Grid.Row="3" Grid.Column="6" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="1" Grid.Column="4"/>
+        <Image Grid.Row="2" Grid.Column="3" Source="/list.png" Width="85" Height="85"/>
+        <Image Source="/list.png" Grid.Row="2" Grid.Column="4"/>
+        <Image Grid.Row="1" Grid.Column="5" Source="/list.png"/>
+        <Image Source="/list.png" Grid.Row="1" Grid.Column="6"/>
+        <Image Grid.Row="2" Grid.Column="5" Source="/list.png"/>
+        <Image Source="/list.png" Grid.Row="2" Grid.Column="6"/>
+        <Image Grid.Row="3" Grid.Column="5" Source="/list.png"/>
+        <Image Source="/list.png" Grid.Row="3" Grid.Column="6"/>
+        <Image x:Name="lava1_9" Source="/Lava.jpg" Grid.Row="1" Grid.Column="9"/>
+        <Image x:Name="lava1_10" Grid.Row="1" Grid.Column="10" Source="/Lava.jpg"/>
+        <Image x:Name="lava2_10" Source="/Lava.jpg" Grid.Row="2" Grid.Column="10"/>
+        <Image x:Name="brick2_0" Grid.Row="2" Source="/Brick.jpg"/>
+        <Image x:Name="brick2_8" Grid.Row="2" Grid.Column="8" Source="/Brick.jpg"/>
+        <Image x:Name="beton3_1" Grid.Row="3" Grid.Column="1" Source="/beton.jpg"/>
+        <Image x:Name="brick3_3" Grid.Row="3" Grid.Column="3" Source="/Brick.jpg"/>
+        <Image x:Name="beton3_7" Grid.Row="3" Grid.Column="7" Source="/beton.jpg"/>
+        <Image x:Name="brick3_8" Grid.Row="3" Grid.Column="8" Source="/Brick.jpg"/>
+        <Image x:Name="beton4_1" Grid.Row="4" Grid.Column="1" Source="/beton.jpg"/>
+        <Image x:Name="beton4_2" Grid.Row="4" Grid.Column="2" Source="/beton.jpg"/>
+        <Image x:Name="beton4_3" Grid.Row="4" Grid.Column="3" Source="/beton.jpg"/>
+        <Image x:Name="beton4_4" Grid.Row="4" Grid.Column="4" Source="/beton.jpg"/>
+        <Image x:Name="brick4_5" Grid.Row="4" Grid.Column="5" Source="/Brick.jpg"/>
+        <Image x:Name="brick4_6" Grid.Row="4" Grid.Column="6" Source="/Brick.jpg"/>
+        <Image x:Name="beton4_7" Grid.Row="4" Grid.Column="7" Source="/beton.jpg"/>
+        <Image x:Name="beton4_8" Grid.Row="4" Grid.Column="8" Source="/beton.jpg"/>
+        <Image x:Name="beton4_9" Source="/beton.jpg" Grid.Row="4" Grid.Column="9"/>
+        <Image x:Name="beton4_10" Grid.Row="4" Grid.Column="10" Source="/beton.jpg"/>
+        <Image x:Name="water5_3" Grid.Row="5" Grid.Column="3" Source="/water.jpg"/>
+        <Image x:Name="glass5_5" Grid.Row="5" Grid.Column="5" Source="/steklo.jpg"/>
+        <Image x:Name="glass5_6" Grid.Row="5" Grid.Column="6" Source="/steklo.jpg"/>
+        <Image x:Name="water5_9" Grid.Row="5" Grid.Column="9" Source="/water.jpg"/>
+        <Image x:Name="water6_2" Grid.Row="6" Grid.Column="2" Source="/water.jpg"/>
+        <Image x:Name="beton6_4" Grid.Row="6" Grid.Column="4" Source="/beton.jpg"/>
+        <Image x:Name="glass6_5" Grid.Row="6" Grid.Column="5" Source="/steklo.jpg"/>
+        <Image x:Name="beton6_7" Grid.Row="6" Grid.Column="7" Source="/beton.jpg"/>
+        <Image x:Name="beton6_8" Grid.Row="6" Grid.Column="8" Source="/beton.jpg"/>
+        <Image x:Name="beton6_10" Grid.Row="6" Grid.Column="10" Source="/beton.jpg"/>
+        <Image x:Name="brick7_0" Grid.Row="7" Source="/Brick.jpg"/>
+        <Image x:Name="brick7_5" Grid.Row="7" Grid.Column="5" Source="/Brick.jpg"/>
+        <Image x:Name="brick7_6" Grid.Row="7" Grid.Column="6" Source="/Brick.jpg"/>
+        <Image x:Name="beton7_7" Grid.Row="7" Grid.Column="7" Source="/beton.jpg"/>
+        <Image x:Name="water7_8" Grid.Row="7" Grid.Column="8" Source="/water.jpg"/>
+        <Image x:Name="beton7_10" Grid.Row="7" Grid.Column="10" Source="/beton.jpg"/>
+        <Image x:Name="beton8_4" Grid.Row="8" Grid.Column="4" Source="/beton.jpg"/>
+        <Image Height="85" Width="85" Grid.Row="8" Grid.Column="5" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="8" Grid.Column="5"/>
+        <Image Source="/list.png" Grid.Row="8" Grid.Column="6"/>
+        <Image x:Name="beton8_7" Grid.Row="8" Grid.Column="7" Source="/beton.jpg"/>
+        <Image x:Name="beton8_8" Grid.Row="8" Grid.Column="8" Source="/beton.jpg"/>
+        <Image x:Name="beton8_10" Grid.Row="8" Grid.Column="10" Source="/beton.jpg"/>
+        <Image x:Name="lava9_1" Grid.Row="9" Grid.Column="1" Source="/Lava.jpg"/>
+        <Image x:Name="beton9_3" Grid.Row="9" Grid.Column="3" Source="/beton.jpg"/>
+        <Image Grid.Row="9" Grid.Column="5" Source="/Defoltderevo.jpg"/>
+        <Image Grid.Row="9" Grid.Column="5" Source="/list.png"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="6"/>
+        <Image Grid.Row="9" Grid.Column="7" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="7"/>
+        <Image Grid.Row="9" Grid.Column="8" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="8"/>
+        <Image x:Name="brick10_0" Grid.Row="10" Source="/Brick.jpg"/>
+        <Image x:Name="lava10_1" Grid.Row="10" Grid.Column="1" Source="/Lava.jpg"/>
+        <Image x:Name="lava10_2" Grid.Row="10" Grid.Column="2" Source="/Lava.jpg"/>
+        <Image Grid.Row="10" Grid.Column="5" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="5"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="6"/>
+        <Image Grid.Row="10" Grid.Column="7" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="7"/>
+        <Image Grid.Row="10" Grid.Column="8" Source="/Defoltderevo.jpg"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="8"/>
+        <Image x:Name="brick10_9" Grid.Row="10" Grid.Column="9" Source="/Brick.jpg"/>
+        <Image x:Name="brick11_0" Grid.Row="11" Source="/Brick.jpg"/>
+        <Image x:Name="brick11_1" Grid.Row="11" Grid.Column="1" Source="/Brick.jpg"/>
+        <Image x:Name="brick11_2" Grid.Row="11" Grid.Column="2" Source="/Brick.jpg"/>
+        <Image x:Name="brick11_3" Grid.Row="11" Grid.Column="3" Source="/Brick.jpg"/>
+        <Image Grid.Row="1" Grid.Column="3" Source="/list.png" Width="85" Height="85"/>
+        <Image x:Name="beton9_9" Height="85" Width="85" Grid.Row="9" Grid.Column="9" Source="/beton.jpg"/>
+        <Image x:Name="tankplayer1" Source="/tank_orange.png" Margin="11,11,11,11" RenderTransformOrigin="0.53,0.567" Grid.Column="1" Grid.Row="1"/>
 
 
     </Grid>

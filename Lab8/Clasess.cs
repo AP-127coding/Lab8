@@ -24,7 +24,7 @@ namespace Lab8
             this.color = color;
             this.vision = vision;
         }
-        public partial void Shoot(Map map, Tank tank);
+        public partial int[] Shoot(Map map, Tank tank);
 
         public partial void Movement(Map map, Tank tank, char k);
 

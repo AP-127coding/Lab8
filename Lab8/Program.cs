@@ -18,8 +18,9 @@ namespace Lab8
         public int HP { get { return hp; } }
         public bool Vision { get { return vision; } }
         public int Direction { get { return direction; } }
-        public partial void Shoot(Map map, Tank tank) // стрельба танка
+        public partial int[] Shoot(Map map, Tank tank) // стрельба танка
         {
+            int[] mas = new int[2]; // массив для возврата координаты клетки
             int xtemp = x;
             int ytemp = y;
             switch (direction)
@@ -33,7 +34,9 @@ namespace Lab8
                         if (tank.x == xtemp && tank.y == ytemp - 1) // если в клетке стоит танк
                         {
                             tank.hp -= power;
-                            Console.WriteLine("Есть пробитие! ");
+                            mas[0] = -1;
+                            mas[1] = -1;
+                            return mas;
                         }
                         else
                         {
@@ -42,11 +45,11 @@ namespace Lab8
                                 map.GetEnvironments(xtemp, ytemp - 1).Change(this); // вызов функции change у клетки
                                 if (map.GetEnvironments(xtemp, ytemp - 1).EnvHP == 0)
                                 {
-                                    map.environments[xtemp, ytemp - 1] = map.GetEnvironments(1, 1); // делает клетку дефолтной
-                                    Console.WriteLine("Клетка стала дефолтной ");
+                                    mas[0] = xtemp;
+                                    mas[1] = ytemp - 1;
+                                    return mas;
                                 }
                             }
-                            else { Console.WriteLine("Снаряд прилетел в клетку, которую невозвожно разрушить. "); }
                         }
                     }
                     break;
@@ -59,7 +62,9 @@ namespace Lab8
                         if (tank.x == xtemp && tank.y == ytemp + 1)
                         {
                             tank.hp -= power;
-                            Console.WriteLine("Есть пробитие! ");
+                            mas[0] = -1;
+                            mas[1] = -1;
+                            return mas;
                         }
                         else
                         {
@@ -67,12 +72,13 @@ namespace Lab8
                             {
                                 map.GetEnvironments(xtemp, ytemp + 1).Change(this);
                                 if (map.GetEnvironments(xtemp, ytemp + 1).EnvHP == 0)
-                                {
-                                    map.environments[xtemp, ytemp + 1] = map.GetEnvironments(1, 1);
-                                    Console.WriteLine("Клетка стала дефолтной! ");
+                                {   
+                                    
+                                    mas[0] = xtemp;
+                                    mas[1] = ytemp + 1;
+                                    return mas;
                                 }
                             }
-                            else { Console.WriteLine("Снаряд прилетел в клетку, которую невозвожно разрушить. "); }
                         }
                     }
                     break;
@@ -85,7 +91,9 @@ namespace Lab8
                         if (tank.x == xtemp - 1 && tank.y == ytemp)
                         {
                             tank.hp -= power;
-                            Console.WriteLine("Есть пробитие! ");
+                            mas[0] = -1;
+                            mas[1] = -1;
+                            return mas;
                         }
                         else
                         {
@@ -94,11 +102,11 @@ namespace Lab8
                                 map.GetEnvironments(xtemp - 1, ytemp).Change(this);
                                 if (map.GetEnvironments(xtemp - 1, ytemp).EnvHP == 0)
                                 {
-                                    map.environments[xtemp - 1, ytemp] = map.GetEnvironments(1, 1);
-                                    Console.WriteLine("Клетка стала дефолтной! ");
+                                    mas[0] = xtemp - 1;
+                                    mas[1] = ytemp;
+                                    return mas;
                                 }
                             }
-                            else { Console.WriteLine("Снаряд прилетел в клетку, которую невозвожно разрушить. "); }
                         }
                     }
                     break;
@@ -111,7 +119,9 @@ namespace Lab8
                         if (tank.x == xtemp + 1 && tank.y == ytemp)
                         {
                             tank.hp -= power;
-                            Console.WriteLine("Есть пробитие! ");
+                            mas[0] = -1;
+                            mas[1] = -1;
+                            return mas;
                         }
                         else
                         {
@@ -121,17 +131,18 @@ namespace Lab8
                                 
                                 if (map.GetEnvironments(xtemp + 1, ytemp).EnvHP == 0)
                                 {
-                                    
-                                    map.environments[xtemp + 1, ytemp] = map.GetEnvironments(1, 1);
-                                    Console.WriteLine("Клетка стала дефолтной ");
+                                    mas[0] = xtemp + 1;
+                                    mas[1] = ytemp;
+                                    return mas;
                                 }
                             }
-                            else { Console.WriteLine("Снаряд прилетел в клетку, которую невозвожно разрушить. "); }
                         }
                     }
                     break;
             }
-
+            mas[0] = -1;
+            mas[1] = -1;
+            return mas;
         }
         public partial void Movement(Map map, Tank tank, char k) // движение танка 
         {

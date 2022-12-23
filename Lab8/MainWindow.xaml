@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
         Title="MainWindow" Height="1024" Width="1024" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
-    <Grid ShowGridLines="True">
+    <Grid x:Name="myGrid">
+    
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -59,7 +60,7 @@
         <Image x:Name="brick0_0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg"/>
         <Image x:Name="brick0_9" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="9"/>
         <Image x:Name="brick0_10" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="10" Width="85" Height="85"/>
-        <Image x:Name="brick1_1_Copy14" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11"/>
+        <Image x:Name="brick0_11" HorizontalAlignment="Center" Height="85" VerticalAlignment="Center" Width="85" Source="/Brick.jpg" Grid.Column="11"/>
         <Image x:Name="brick0_8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="8"/>
         <Image x:Name="brick2_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="2"/>
         <Image x:Name="brick3_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="3"/>
@@ -78,7 +79,7 @@
         <Image x:Name="brick11_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Row="11" Grid.Column="11"/>
         <Image x:Name="brick9_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="9"/>
         <Image x:Name="brick8_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="8"/>
-        <Image x:Name="beton7_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="7"/>
+        <Image x:Name="brick7_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="7"/>
         <Image x:Name="brick6_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="6"/>
         <Image x:Name="brick5_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="5"/>
         <Image x:Name="brick10_11" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Brick.jpg" Grid.Column="11" Grid.Row="10"/>
@@ -130,7 +131,7 @@
         <Image x:Name="beton7_4" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="7" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="4" Grid.ColumnSpan="2"/>
         <Image x:Name="beton5_7" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="7"/>
         <Image x:Name="beton5_10" RenderTransformOrigin="2.482,0.895" Margin="1,1,85,82" Grid.Row="5" Grid.ColumnSpan="2" Source="/beton.jpg" Grid.RowSpan="2" Grid.Column="10"/>
-        <Image x:Name="wood1_1" Grid.Row="1" Grid.Column="1" Source="/Defoltderevo.jpg">
+        <Image x:Name="wood" Grid.Row="1" Grid.Column="1" Source="/Defoltderevo.jpg">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Defoltderevo.jpg" TileMode="None"/>
             </Image.OpacityMask>
@@ -165,15 +166,15 @@
         <Image Height="85" Width="85" Grid.Row="2" Grid.Column="6" Source="/Defoltderevo.jpg"/>
         <Image Height="85" Width="85" Source="/Defoltderevo.jpg" Grid.Row="3" Grid.Column="5"/>
         <Image Height="85" Width="85" Grid.Row="3" Grid.Column="6" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="1" Grid.Column="4"/>
-        <Image Grid.Row="2" Grid.Column="3" Source="/list.png" Width="85" Height="85"/>
-        <Image Source="/list.png" Grid.Row="2" Grid.Column="4"/>
-        <Image Grid.Row="1" Grid.Column="5" Source="/list.png"/>
-        <Image Source="/list.png" Grid.Row="1" Grid.Column="6"/>
-        <Image Grid.Row="2" Grid.Column="5" Source="/list.png"/>
-        <Image Source="/list.png" Grid.Row="2" Grid.Column="6"/>
-        <Image Grid.Row="3" Grid.Column="5" Source="/list.png"/>
-        <Image Source="/list.png" Grid.Row="3" Grid.Column="6"/>
+        <Image Source="/list.png" Grid.Row="1" Grid.Column="4" Panel.ZIndex="2"/>
+        <Image Grid.Row="2" Grid.Column="3" Source="/list.png" Width="85" Height="85" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="2" Grid.Column="4" Panel.ZIndex="2"/>
+        <Image Grid.Row="1" Grid.Column="5" Source="/list.png" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="1" Grid.Column="6" Panel.ZIndex="2"/>
+        <Image Grid.Row="2" Grid.Column="5" Source="/list.png" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="2" Grid.Column="6" Panel.ZIndex="2"/>
+        <Image Grid.Row="3" Grid.Column="5" Source="/list.png" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="3" Grid.Column="6" Panel.ZIndex="2"/>
         <Image x:Name="lava1_9" Source="/Lava.jpg" Grid.Row="1" Grid.Column="9"/>
         <Image x:Name="lava1_10" Grid.Row="1" Grid.Column="10" Source="/Lava.jpg"/>
         <Image x:Name="lava2_10" Source="/Lava.jpg" Grid.Row="2" Grid.Column="10"/>
@@ -211,38 +212,38 @@
         <Image x:Name="beton7_10" Grid.Row="7" Grid.Column="10" Source="/beton.jpg"/>
         <Image x:Name="beton8_4" Grid.Row="8" Grid.Column="4" Source="/beton.jpg"/>
         <Image Height="85" Width="85" Grid.Row="8" Grid.Column="5" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="8" Grid.Column="5"/>
-        <Image Source="/list.png" Grid.Row="8" Grid.Column="6"/>
+        <Image Source="/list.png" Grid.Row="8" Grid.Column="5" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="8" Grid.Column="6" Panel.ZIndex="2"/>
         <Image x:Name="beton8_7" Grid.Row="8" Grid.Column="7" Source="/beton.jpg"/>
         <Image x:Name="beton8_8" Grid.Row="8" Grid.Column="8" Source="/beton.jpg"/>
         <Image x:Name="beton8_10" Grid.Row="8" Grid.Column="10" Source="/beton.jpg"/>
         <Image x:Name="lava9_1" Grid.Row="9" Grid.Column="1" Source="/Lava.jpg"/>
         <Image x:Name="beton9_3" Grid.Row="9" Grid.Column="3" Source="/beton.jpg"/>
         <Image Grid.Row="9" Grid.Column="5" Source="/Defoltderevo.jpg"/>
-        <Image Grid.Row="9" Grid.Column="5" Source="/list.png"/>
-        <Image Source="/list.png" Grid.Row="9" Grid.Column="6"/>
+        <Image Grid.Row="9" Grid.Column="5" Source="/list.png" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="6" Panel.ZIndex="2"/>
         <Image Grid.Row="9" Grid.Column="7" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="9" Grid.Column="7"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="7" Panel.ZIndex="2"/>
         <Image Grid.Row="9" Grid.Column="8" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="9" Grid.Column="8"/>
+        <Image Source="/list.png" Grid.Row="9" Grid.Column="8" Panel.ZIndex="2"/>
         <Image x:Name="brick10_0" Grid.Row="10" Source="/Brick.jpg"/>
         <Image x:Name="lava10_1" Grid.Row="10" Grid.Column="1" Source="/Lava.jpg"/>
         <Image x:Name="lava10_2" Grid.Row="10" Grid.Column="2" Source="/Lava.jpg"/>
         <Image Grid.Row="10" Grid.Column="5" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="10" Grid.Column="5"/>
-        <Image Source="/list.png" Grid.Row="10" Grid.Column="6"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="5" Panel.ZIndex="2"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="6" Panel.ZIndex="2"/>
         <Image Grid.Row="10" Grid.Column="7" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="10" Grid.Column="7"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="7" Panel.ZIndex="2"/>
         <Image Grid.Row="10" Grid.Column="8" Source="/Defoltderevo.jpg"/>
-        <Image Source="/list.png" Grid.Row="10" Grid.Column="8"/>
+        <Image Source="/list.png" Grid.Row="10" Grid.Column="8" Panel.ZIndex="2"/>
         <Image x:Name="brick10_9" Grid.Row="10" Grid.Column="9" Source="/Brick.jpg"/>
         <Image x:Name="brick11_0" Grid.Row="11" Source="/Brick.jpg"/>
         <Image x:Name="brick11_1" Grid.Row="11" Grid.Column="1" Source="/Brick.jpg"/>
         <Image x:Name="brick11_2" Grid.Row="11" Grid.Column="2" Source="/Brick.jpg"/>
         <Image x:Name="brick11_3" Grid.Row="11" Grid.Column="3" Source="/Brick.jpg"/>
-        <Image Grid.Row="1" Grid.Column="3" Source="/list.png" Width="85" Height="85"/>
+        <Image x:Name="grass" Grid.Row="1" Grid.Column="3" Source="/list.png" Width="85" Height="85" Panel.ZIndex="2"/>
         <Image x:Name="beton9_9" Height="85" Width="85" Grid.Row="9" Grid.Column="9" Source="/beton.jpg"/>
-        <Image x:Name="tankplayer1" Source="/tank_orange.png" Margin="11,11,11,11" RenderTransformOrigin="0.53,0.567" Grid.Column="1" Grid.Row="1"/>
+        <Image x:Name="tankplayer1" Source="/tank_orange.png" Margin="11,11,11,11" RenderTransformOrigin="0.53,0.567" Grid.Column="1" Grid.Row="1" Panel.ZIndex="1"/>
 
 
     </Grid>

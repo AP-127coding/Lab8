@@ -8,7 +8,7 @@ namespace Lab8
 {
     interface IShoot //стрельба танков
     {
-        void Shoot(Map map, Tank tank);
+        int[] Shoot(Map map, Tank tank);
     }
     interface IMovement
     {

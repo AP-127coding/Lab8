@@ -542,6 +542,5 @@ namespace Lab8
             }
             Console.WriteLine("GAME OVER!");
         }
-        
     }
 }

@@ -20,8 +20,13 @@ namespace Lab8
     public partial class Menu : Window
     {
         MainWindow main = new MainWindow();
-        public Menu()
+        public Menu ()
         {
+            InitializeComponent();
+        }
+        public Menu(MainWindow window)
+        {
+            main = window;
             InitializeComponent();
         }
 
@@ -57,7 +62,20 @@ namespace Lab8
 
         private void Start_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            main.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
+        }
+
+        private void Continue_MouseDown(object sender, MouseButtonEventArgs e)
+        {
             main.Show();
+            Close();
+        }
+
+        private void Exit_MouseDown(object sender, MouseButtonEventArgs e)
+        {
             Close();
         }
     }

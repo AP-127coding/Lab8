@@ -13,9 +13,9 @@
                 <GradientStop Color="#FF1A1919" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="Continue" Content="Продолжить" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Continue_MouseEnter" MouseLeave="Continue_MouseLeave"/>
+        <Label x:Name="Continue" Content="Продолжить" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Continue_MouseEnter" MouseLeave="Continue_MouseLeave" MouseDown="Continue_MouseDown"/>
         <Label x:Name="Start" Content="Новая игра" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Start_MouseEnter" MouseLeave="Start_MouseLeave" MouseDown="Start_MouseDown"/>
-        <Label x:Name="Exit" Content="Выход" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave"/>
+        <Label x:Name="Exit" Content="Выход" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseDown="Exit_MouseDown"/>
 
     </Grid>
 </Window>

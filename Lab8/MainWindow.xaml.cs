@@ -32,9 +32,6 @@ namespace Lab8
         
         public MainWindow()
         {
-            Menu menu = new Menu();
-            menu.Show();
-            Close();
             InitializeComponent();
 
         }
@@ -80,6 +77,12 @@ namespace Lab8
                     }
                 }
 
+            }
+            if (e.Key == Key.Escape)
+            {
+                Menu menu = new Menu(this);
+                menu.Show();
+                Hide();
             }
             if (e.Key == Key.W)
             {

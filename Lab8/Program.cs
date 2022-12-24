@@ -43,12 +43,12 @@ namespace Lab8
                             if (map.GetEnvironments(xtemp, ytemp - 1).EnvHP > 0) // если клетка иммет здороье 
                             {
                                 map.GetEnvironments(xtemp, ytemp - 1).Change(this); // вызов функции change у клетки
-                                if (map.GetEnvironments(xtemp, ytemp - 1).EnvHP == 0)
-                                {
+                                
+                                
                                     mas[0] = xtemp;
                                     mas[1] = ytemp - 1;
                                     return mas;
-                                }
+                                
                             }
                         }
                     }
@@ -71,13 +71,11 @@ namespace Lab8
                             if (map.GetEnvironments(xtemp, ytemp + 1).EnvHP > 0)
                             {
                                 map.GetEnvironments(xtemp, ytemp + 1).Change(this);
-                                if (map.GetEnvironments(xtemp, ytemp + 1).EnvHP == 0)
-                                {   
-                                    
+                                
                                     mas[0] = xtemp;
                                     mas[1] = ytemp + 1;
                                     return mas;
-                                }
+                                
                             }
                         }
                     }
@@ -100,12 +98,12 @@ namespace Lab8
                             if (map.GetEnvironments(xtemp - 1, ytemp).EnvHP > 0)
                             {
                                 map.GetEnvironments(xtemp - 1, ytemp).Change(this);
-                                if (map.GetEnvironments(xtemp - 1, ytemp).EnvHP == 0)
-                                {
+                                
+                                
                                     mas[0] = xtemp - 1;
                                     mas[1] = ytemp;
                                     return mas;
-                                }
+                                
                             }
                         }
                     }
@@ -129,12 +127,12 @@ namespace Lab8
                             {
                                 map.GetEnvironments(xtemp + 1, ytemp).Change(this);
                                 
-                                if (map.GetEnvironments(xtemp + 1, ytemp).EnvHP == 0)
-                                {
+                                
+                                
                                     mas[0] = xtemp + 1;
                                     mas[1] = ytemp;
                                     return mas;
-                                }
+                                
                             }
                         }
                     }
@@ -324,7 +322,7 @@ namespace Lab8
     }
     class Program
     {
-        static Map MapSerialisation(Map map, int x, int y, int x2, int y2, bool flag)
+        static public  Map MapSerialisation(Map map, int x, int y, int x2, int y2, bool flag)
         {
             if (flag == true)
             {
@@ -356,7 +354,7 @@ namespace Lab8
 
             return map;
         }
-        static Tank TankSerialisation(Tank tank, bool flag)
+        static public Tank TankSerialisation(Tank tank, bool flag)
         {
             if (flag == true)
             {
@@ -373,7 +371,7 @@ namespace Lab8
 
             return tank;
         }
-        static Tank Tank2Serialisation(Tank tank2, bool flag)
+        static public Tank Tank2Serialisation(Tank tank2, bool flag)
         {
             if (flag == true)
             {

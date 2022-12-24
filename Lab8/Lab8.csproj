@@ -13,7 +13,10 @@
     <None Remove="Defoltderevo.jpg" />
     <None Remove="Lava.jpg" />
     <None Remove="list.png" />
+    <None Remove="razbit_beton.jpg" />
     <None Remove="steklo.jpg" />
+    <None Remove="tank_black.png" />
+    <None Remove="tank_green.png" />
     <None Remove="tank_orange.png" />
     <None Remove="water.jpg" />
   </ItemGroup>
@@ -24,7 +27,10 @@
     <Resource Include="Defoltderevo.jpg" />
     <Resource Include="Lava.jpg" />
     <Resource Include="list.png" />
+    <Resource Include="razbit_beton.jpg" />
     <Resource Include="steklo.jpg" />
+    <Resource Include="tank_black.png" />
+    <Resource Include="tank_green.png" />
     <Resource Include="tank_orange.png" />
     <Resource Include="water.jpg" />
   </ItemGroup>

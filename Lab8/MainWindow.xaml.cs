@@ -20,14 +20,15 @@ namespace Lab8
     /// </summary>
     public partial class MainWindow : Window
     {
-        Tank tank1 = new BaseTank(1, 1, 4);
-        Tank tank2 = new BaseTank(10, 10, 3);
+        Tank tank1;
+        Tank tank2;
         Map map = new Map();
         int[] arr = new int[2];
         RotateTransform right = new RotateTransform(90);
         RotateTransform left = new RotateTransform(270);
         RotateTransform up = new RotateTransform(0);
         RotateTransform down = new RotateTransform(180);
+        System.Windows.Threading.DispatcherTimer formTimer = new System.Windows.Threading.DispatcherTimer();
         Image[,] im = new Image[12, 12];
         
         public MainWindow()
@@ -35,9 +36,40 @@ namespace Lab8
             InitializeComponent();
 
         }
+        public MainWindow(Tank t1,Tank t2)
+        {
+            tank1 = t1;
+            tank2 = t2;
+            InitializeComponent();
+        }
         
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
+            if (tank1.GetType().Name == "BaseTank")
+            {
+                tankplayer1.Source = basetank.Source;
+            }
+            if (tank1.GetType().Name == "SpeedTank")
+            {
+                tankplayer1.Source = speedytank.Source;
+            }
+            if (tank1.GetType().Name == "PowerfulTank")
+            {
+                tankplayer1.Source = powerfultank.Source;
+            }
+            if (tank2.GetType().Name == "BaseTank")
+            {
+                tankplayer2.Source = basetank.Source;
+            }
+            if (tank2.GetType().Name == "SpeedTank")
+            {
+                tankplayer2.Source = speedytank.Source;
+            }
+            if (tank2.GetType().Name == "PowerfulTank")
+            {
+                tankplayer2.Source = powerfultank.Source;
+            }
             Image[,] images =
           {
             {brick0_0,brick0_1,brick0_2,brick0_3,brick0_4,brick0_5,brick0_6,brick0_7,brick0_8,brick0_9,brick0_10,brick0_11},
@@ -61,8 +93,30 @@ namespace Lab8
                     im[i, j] = images[i, j];
                 }
             }
+            
+            formTimer.Interval = new TimeSpan(100);
+            formTimer.Start();
+            formTimer.Tick += new EventHandler(FormTimer_Tick);
         }
-
+        private void FormTimer_Tick(object sender, EventArgs e)
+        {
+            if (tank1.HP <= 0)
+            {
+                MessageBox.Show("GAME OVER!\nPlayer 2 Win", "GAME", MessageBoxButton.OK, MessageBoxImage.Information);
+                Menu menu = new Menu();
+                menu.Show();
+                formTimer.Stop();
+                Close();
+            }
+            if (tank2.HP <= 0)
+            {
+                MessageBox.Show("GAME OVER!\nPlayer 1 Win", "GAME", MessageBoxButton.OK, MessageBoxImage.Information);
+                Menu menu = new Menu();
+                menu.Show();
+                formTimer.Stop();
+                Close();
+            }
+        }
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.X)
@@ -71,16 +125,36 @@ namespace Lab8
 
                 if (arr[0] != -1 && arr[1] != -1)
                 {
+                    if (map.environments[arr[0], arr[1]].EnvHP <= 60 && map.environments[arr[0], arr[1]].EnvHP > 0)
+                    {
+                        im[arr[0], arr[1]].Source = damaged_beton.Source;
+                    }
                     if (map.environments[arr[0], arr[1]].EnvHP == 0)
                     {
                         im[arr[0], arr[1]].Source = wood.Source;
                     }
                 }
+            }
+            if (e.Key == Key.M)
+            {
+                arr = tank2.Shoot(map, tank1);
 
+                if (arr[0] != -1 && arr[1] != -1)
+                {
+                    if (map.environments[arr[0], arr[1]].EnvHP <= 60 && map.environments[arr[0], arr[1]].EnvHP > 0)
+                    {
+                        im[arr[0], arr[1]].Source = damaged_beton.Source;
+                    }
+                    if (map.environments[arr[0], arr[1]].EnvHP == 0)
+                    {
+                        im[arr[0], arr[1]].Source = wood.Source;
+                    }
+                }
+             
             }
             if (e.Key == Key.Escape)
             {
-                Menu menu = new Menu(this);
+                Menu menu = new Menu(this,tank1,tank2);
                 menu.Show();
                 Hide();
             }
@@ -92,6 +166,14 @@ namespace Lab8
                 Grid.SetRow(tankplayer1, tank1.X);
                 tankplayer1.RenderTransform = up;
             }
+            if (e.Key == Key.I)
+            {
+                char i = 'i';
+                tank2.Movement(map, tank1, i);
+                Grid.SetColumn(tankplayer2, tank2.Y);
+                Grid.SetRow(tankplayer2, tank2.X);
+                tankplayer2.RenderTransform = up;
+            }
             if (e.Key == Key.A)
             {
                 char a = 'a';
@@ -101,6 +183,14 @@ namespace Lab8
                 tankplayer1.RenderTransform = left;
 
             }
+            if (e.Key == Key.J)
+            {
+                char j = 'j';
+                tank2.Movement(map, tank1, j);
+                Grid.SetColumn(tankplayer2, tank2.Y);
+                Grid.SetRow(tankplayer2, tank2.X);
+                tankplayer2.RenderTransform = left;
+            }
             if (e.Key == Key.S)
             {
                 char s = 's';
@@ -108,6 +198,14 @@ namespace Lab8
                 Grid.SetColumn(tankplayer1, tank1.Y);
                 Grid.SetRow(tankplayer1, tank1.X);
                 tankplayer1.RenderTransform = down;
+            }
+            if (e.Key == Key.K)
+            {
+                char k = 'k';
+                tank2.Movement(map, tank1, k);
+                Grid.SetColumn(tankplayer2, tank2.Y);
+                Grid.SetRow(tankplayer2, tank2.X);
+                tankplayer2.RenderTransform = down;
             }
             if (e.Key == Key.D)
             {
@@ -117,6 +215,20 @@ namespace Lab8
                 Grid.SetRow(tankplayer1, tank1.X);
                 tankplayer1.RenderTransform = right;
             }
+            if (e.Key == Key.L)
+            {
+                char l = 'l';
+                tank2.Movement(map, tank1, l);
+                Grid.SetColumn(tankplayer2, tank2.Y);
+                Grid.SetRow(tankplayer2, tank2.X);
+                tankplayer2.RenderTransform = right;
+            }
+
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
-    <Grid>
+        Title="Menu" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black"/>
                 <GradientStop Color="#FF1A1919" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="Continue" Content="Продолжить" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Continue_MouseEnter" MouseLeave="Continue_MouseLeave" MouseDown="Continue_MouseDown"/>
-        <Label x:Name="Start" Content="Новая игра" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Start_MouseEnter" MouseLeave="Start_MouseLeave" MouseDown="Start_MouseDown"/>
-        <Label x:Name="Exit" Content="Выход" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseDown="Exit_MouseDown"/>
+        <Label x:Name="Continue" Content="Продолжить" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Continue_MouseEnter" MouseLeave="Continue_MouseLeave" MouseDown="Continue_MouseDown" Cursor="Hand"/>
+        <Label x:Name="Start" Content="Новая игра" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Start_MouseEnter" MouseLeave="Start_MouseLeave" MouseDown="Start_MouseDown" Cursor="Hand"/>
+        <Label x:Name="Exit" Content="Выход" HorizontalAlignment="Center" Margin="0,288,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Times New Roman" FontSize="24" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseDown="Exit_MouseDown" Cursor="Hand"/>
+        <Label x:Name="Keyboard" Content="Управление" HorizontalAlignment="Center" Margin="0,233,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Times New Roman" FontSize="24" MouseEnter="Keyboard_MouseEnter" MouseLeave="Keyboard_MouseLeave" MouseDown="Keyboard_MouseDown" Cursor="Hand"/>
 
     </Grid>
 </Window>

@@ -19,16 +19,22 @@ namespace Lab8
     /// </summary>
     public partial class Menu : Window
     {
+
+        Tank tank1;
+        Tank tank2;
         MainWindow main = new MainWindow();
         public Menu ()
         {
             InitializeComponent();
         }
-        public Menu(MainWindow window)
+        public Menu(MainWindow window, Tank t1, Tank t2)
         {
             main = window;
+            tank1 = t1;
+            tank2 = t2;
             InitializeComponent();
         }
+       
 
         private void Continue_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -62,21 +68,60 @@ namespace Lab8
 
         private void Start_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            main.Close();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            
+            ChooseTanks ct = new ChooseTanks();
+            ct.Show();
             Close();
         }
 
         private void Continue_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            main.Show();
+            MainWindow mainw = new MainWindow(tank1, tank2);
+            mainw.Show();
             Close();
         }
 
         private void Exit_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Close();
+            Program.TankSerialisation(tank1, false);
+            Program.Tank2Serialisation(tank2, false);
+            
+            Application.Current.Shutdown();
         }
+
+        private void Keyboard_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Keyboard.Foreground = Brushes.Red;
+        }
+
+        private void Keyboard_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Keyboard.Foreground = Brushes.White;
+        }
+
+        private void Keyboard_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Keyboarding keyboarding = new Keyboarding(this);
+            keyboarding.Show();
+            Hide();
+        }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                tank1 = Program.TankSerialisation(tank1, true);
+                tank2 = Program.Tank2Serialisation(tank2, true);
+            }
+            catch(Exception)
+            {
+
+            }
+         }
     }
 }

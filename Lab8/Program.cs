@@ -152,7 +152,7 @@ namespace Lab8
                 case 'w':
                     {
                         direction = 3;
-                        if (map.GetEnvironments(x - 1, y).EnvHP == 0 && (x - 1 != tank.x || y != tank.y)) // если клетка проходимая и там не стоит танк
+                        if ((map.GetEnvironments(x - 1, y).EnvHP == 0 || map.GetEnvironments(x - 1, y).EnvHP == -2) && (x - 1 != tank.x || y != tank.y)) // если клетка проходимая и там не стоит танк
                         {
                             OwnMovement(); // вызов виртуальной функции
                             x--;
@@ -177,7 +177,7 @@ namespace Lab8
                 case 's':
                     {
                         direction = 4;
-                        if (map.GetEnvironments(x + 1, y).EnvHP == 0 && (x + 1 != tank.x || y != tank.y))
+                        if ((map.GetEnvironments(x + 1, y).EnvHP == 0 || map.GetEnvironments(x +1 , y).EnvHP == -2 ) && (x + 1 != tank.x || y != tank.y))
                         {
                             OwnMovement();
                             x++;
@@ -201,7 +201,7 @@ namespace Lab8
                 case 'd':
                     {
                         direction = 2;
-                        if (map.GetEnvironments(x, y + 1).EnvHP == 0 && (x != tank.x || y + 1 != tank.y))
+                        if ((map.GetEnvironments(x, y + 1).EnvHP == 0 || map.GetEnvironments(x , y+1 ).EnvHP == -2) && (x != tank.x || y + 1 != tank.y))
                         {
                             OwnMovement();
                             y++;
@@ -225,7 +225,7 @@ namespace Lab8
                 case 'a':
                     {
                         direction = 1;
-                        if (map.GetEnvironments(x, y - 1).EnvHP == 0 && (x != tank.x || y - 1 != tank.y))
+                        if ((map.GetEnvironments(x, y - 1).EnvHP == 0 || map.GetEnvironments(x , y-1 ).EnvHP == -2 ) && (x != tank.x || y - 1 != tank.y))
                         {
                             OwnMovement();
                             y--;
@@ -443,158 +443,6 @@ namespace Lab8
             tank2file.Close();
 
             return tank2;
-        }
-        static Tank ChooseTank1(Tank tank) // выбор танка для 1 игрока
-        {
-            string p1;
-            int player1 = 0;
-            while (true)
-            {
-                Console.WriteLine("Выберите танк:");
-                Console.WriteLine("Игрок 1:\n1 - Обычный танк\n2 - Быстрый танк\n3 - Мощный танк");
-                p1 = Console.ReadLine();
-                try
-                {
-                    player1 = int.Parse(p1);
-                }
-                catch
-                {
-                    Console.WriteLine("Неправильный ввод.");
-                    continue;
-                }
-                if (player1 == 1 || player1 == 2 || player1 == 3)
-                {
-                    switch (player1)
-                    {
-                        case 1: break;
-                        case 2: tank = new SpeedTank(1, 1, 2); break;
-                        case 3: tank = new PowerfulTank(1, 1, 2); break;
-                    }
-                    return tank;
-                }
-                else
-                {
-                    Console.WriteLine("Неправильный ввод.");
-                    continue;
-                }
-            }
-
-        }
-        static Tank ChooseTank2(Tank tank2) // выбор танка для 2 игрока
-        {
-            string p2;
-            int player2 = 0;
-            while (true)
-            {
-                Console.WriteLine("Выберите танк:");
-                Console.WriteLine("Игрок 2:\n1 - Обычный танк\n2 - Быстрый танк\n3 - Мощный танк");
-                p2 = Console.ReadLine();
-                try
-                {
-                    player2 = int.Parse(p2);
-                }
-                catch
-                {
-                    Console.WriteLine("Неправильный ввод.");
-                    continue;
-                }
-                if (player2 == 1 || player2 == 2 || player2 == 3)
-                {
-                    switch (player2)
-                    {
-                        case 1: break;
-                        case 2: tank2 = new SpeedTank(10, 10, 3); break;
-                        case 3: tank2 = new PowerfulTank(10, 10, 3); break;
-                    }
-                    return tank2;
-                }
-                else
-                {
-                    Console.WriteLine("Неправильный ввод.");
-                    continue;
-                }
-            }
-        }
-        static void Actions()
-        {
-            Map map = new Map();
-            Tank tank = new BaseTank(1, 1, 2);
-            Tank tank2 = new BaseTank(10, 10, 3);
-
-            Console.WriteLine("Управление\nИгрок 1: w - вверх, s - вниз, d - вправо, a - влево, x - выстрел\nИгрок 2: i - вверх, k - вниз, j - влево, l - вправо, m - выстрел\n");
-            tank = ChooseTank1(tank);
-            tank2 = ChooseTank2(tank2);
-            Console.WriteLine("Для выхода с сохранением нажмите q");
-            Console.WriteLine("Чтобы продолжить игру с предыдущего сохранения - нажмите z\n");
-            Console.WriteLine("Игра началась");
-
-            while (tank.HP > 0 && tank2.HP > 0) // игра может продолжаться только тогда, когда у такнков есть здоровье
-            {
-                string g;
-                char k;
-                try
-                {
-                    g = Console.ReadLine(); // считывание кнопок
-                    if (g.Length > 1)
-                    {
-                        Console.WriteLine("Таких кнопок нет в управлении.");
-                        continue;
-                    }
-                    k = Convert.ToChar(g);
-                }
-                catch
-                {
-                    Console.WriteLine("Ошибка при вводе");
-                    continue;
-                }
-                switch (k) // вызов функциий, соответствующих клавиш
-                {
-                    case 'i': tank2.Movement(map, tank, k); break;
-                    case 'w': tank.Movement(map, tank2, k); break;
-                    case 'k': tank2.Movement(map, tank, k); break;
-                    case 's': tank.Movement(map, tank2, k); break;
-                    case 'l': tank2.Movement(map, tank, k); break;
-                    case 'd': tank.Movement(map, tank2, k); break;
-                    case 'j': tank2.Movement(map, tank, k); break;
-                    case 'a': tank.Movement(map, tank2, k); break;
-                    case 'x': tank.Shoot(map, tank2); break;
-                    case 'm': tank2.Shoot(map, tank); break;
-                    case 'q': // сериализация  
-                        {
-                            try
-                            {
-                                map = MapSerialisation(map, tank.X, tank.Y, tank2.X, tank2.Y, false);
-                                tank = TankSerialisation(tank, false);
-                                tank2 = Tank2Serialisation(tank2, false);
-                                Console.WriteLine("Данные успешно сохранены!");
-                                Process.GetCurrentProcess().Kill();
-                            }
-                            catch
-                            {
-                                Console.WriteLine("Данные не сохранены!");
-                            }
-
-                        };
-                        break;
-                    case 'z': // десериализация 
-                        {
-                            try
-                            {
-                                tank = TankSerialisation(tank, true);
-                                tank2 = Tank2Serialisation(tank2, true);
-                                map = MapSerialisation(map, tank.X, tank.Y, tank2.X, tank2.Y, true);
-                                Console.WriteLine("Данные прошлой игры востановлены!");
-                            }
-                            catch
-                            {
-                                Console.WriteLine("Данные прошлой игры не сохранены!");
-                            }
-                        }
-                        break;
-                    default: Console.WriteLine("Неправильный ввод!"); break;
-                }
-            }
-            Console.WriteLine("GAME OVER!");
         }
     }
 }

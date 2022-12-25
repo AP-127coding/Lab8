@@ -16,7 +16,6 @@ namespace Lab8
         protected int direction; // направление танка (1 - влево, 2 - вправо, 3 - вверх, 4 - вниз)
         protected int x; // положение по оси x
         protected int y; // положение по оси y
-
         protected Tank(int hp, int power, string color, bool vision)
         {
             this.hp = hp;
@@ -25,9 +24,7 @@ namespace Lab8
             this.vision = vision;
         }
         public partial int[] Shoot(Map map, Tank tank);
-
         public partial void Movement(Map map, Tank tank, char k);
-
         public virtual void OwnMovement() { }
     }
     [Serializable]
@@ -63,7 +60,6 @@ namespace Lab8
             base.y = y;
             base.direction = dir;
         }
-
         public override partial void OwnMovement();
     }
     [Serializable]
@@ -73,12 +69,10 @@ namespace Lab8
         protected int envhp; // "здоровье" клетки
         protected int damage; // урон клетки
         protected bool envVision; // видимость танка в клетке
-
         public int EnvHP { get { return envhp; } }
         public bool EnvVision { get { return envVision; } }
         public int Damage { get { return damage; } }
         public bool BulletPassability { get { return bulletPassability; } }
-
         protected Environment(bool bulletPassability, int envhp, int damage, bool envVision)
         {
             this.bulletPassability = bulletPassability;
@@ -86,7 +80,6 @@ namespace Lab8
             this.damage = damage;
             this.envVision = envVision;
         }
-
         public virtual partial void Change(Tank tank);
     }
     /* здоровье = -1 показывает, что клетку нельзя пройти и сломать, 
@@ -129,7 +122,7 @@ namespace Lab8
     public class Grass : Environment // трава (не меняется)
     {
 
-        public Grass() : base(true, -1, 0, false)
+        public Grass() : base(true, -2, 0, false)
         {
 
         }
@@ -146,7 +139,7 @@ namespace Lab8
     [Serializable]
     public class Lava : Environment // лава (не меняется)
     {
-        public Lava() : base(true, -1, 15, true)
+        public Lava() : base(true, -2, 15, true)
         {
 
         }

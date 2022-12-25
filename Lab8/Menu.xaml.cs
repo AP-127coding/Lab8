@@ -17,30 +17,28 @@ namespace Lab8
     /// <summary>
     /// Логика взаимодействия для Menu.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class Menu : Window // окно меню
     {
-
         Tank tank1;
         Tank tank2;
         MainWindow main = new MainWindow();
         Map map = new Map();
-        public Menu ()
+        public Menu () // конструктор
         {
             InitializeComponent();
-            try
+            try // попытка десериализации 
             {
                 tank1 = Program.TankSerialisation(tank1, true);
                 tank2 = Program.Tank2Serialisation(tank2, true);
                 map = Program.MapSerialisation(map, tank1.X, tank1.Y, tank2.X, tank2.Y, true);
             }
-            catch (Exception)
+            catch (Exception) // иначе кнопку "Продолжить" невозможно нажать
             {
                 Continue.IsEnabled = false;
                 Continue.Foreground = Brushes.Gray;
-            }
-            
+            }       
         }
-        public Menu(MainWindow window, Tank t1, Tank t2,Map map)
+        public Menu(MainWindow window, Tank t1, Tank t2,Map map) // конструктор
         {
             this.map = map;
             main = window;
@@ -48,8 +46,6 @@ namespace Lab8
             tank2 = t2;
             InitializeComponent();
         }
-       
-
         private void Continue_MouseEnter(object sender, MouseEventArgs e)
         {
             Continue.Foreground = Brushes.Red;
@@ -95,7 +91,7 @@ namespace Lab8
             Close();
         }
 
-        private void Exit_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Exit_MouseDown(object sender, MouseButtonEventArgs e) // сериализация при нажатии "Выход"
         {
             Program.TankSerialisation(tank1, false);
             Program.Tank2Serialisation(tank2, false);
@@ -113,7 +109,7 @@ namespace Lab8
             Keyboard.Foreground = Brushes.White;
         }
 
-        private void Keyboard_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Keyboard_MouseDown(object sender, MouseButtonEventArgs e) // нажатие клавиши "Управление"
         {
             Keyboarding keyboarding = new Keyboarding(this);
             keyboarding.Show();
@@ -124,19 +120,5 @@ namespace Lab8
         {
             DragMove();
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            //try
-            //{
-            //    tank1 = Program.TankSerialisation(tank1, true);
-            //    tank2 = Program.Tank2Serialisation(tank2, true);
-            //}
-            //catch(Exception)
-            //{
-            //    Continue.IsEnabled = false;
-            //    Continue.Foreground = Brushes.Gray;
-            //}
-         }
     }
 }

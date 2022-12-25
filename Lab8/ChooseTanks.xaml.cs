@@ -17,31 +17,27 @@ namespace Lab8
     /// <summary>
     /// Логика взаимодействия для ChooseTanks.xaml
     /// </summary>
-    public partial class ChooseTanks : Window
+    public partial class ChooseTanks : Window // окно для выбора танка
     {
         Tank tank1,tank2;
         bool player1 = true; // флаг для определения номера игрока
-        public ChooseTanks()
+        public ChooseTanks() // конструктор
         {
             InitializeComponent();
         }
-
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
-
         private void ChooseBase_MouseEnter(object sender, MouseEventArgs e)
         {
             ChooseBase.Background = Brushes.Black;
         }
-
         private void ChooseBase_MouseLeave(object sender, MouseEventArgs e)
         {
             ChooseBase.Background = Brushes.Red;
         }
-
-        private void ChooseBase_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ChooseBase_MouseDown(object sender, MouseButtonEventArgs e) // выбор базового танка 
         {
             if (player1 == true)
             {
@@ -56,18 +52,15 @@ namespace Lab8
             main.Show();
             Close();
         }
-
         private void ChooseSpeedy_MouseEnter(object sender, MouseEventArgs e)
         {
             ChooseSpeedy.Background = Brushes.Black;
         }
-
         private void ChooseSpeedy_MouseLeave(object sender, MouseEventArgs e)
         {
             ChooseSpeedy.Background = Brushes.Red;
         }
-
-        private void ChooseSpeedy_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ChooseSpeedy_MouseDown(object sender, MouseButtonEventArgs e) // выбор быстрого танка 
         {
             if (player1 == true)
             {
@@ -82,8 +75,7 @@ namespace Lab8
             main.Show();
             Close();
         }
-
-        private void ChoosePowerful_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ChoosePowerful_MouseDown(object sender, MouseButtonEventArgs e) // выбор мощного танка 
         {
             if (player1 == true)
             {
@@ -99,12 +91,10 @@ namespace Lab8
             main.Show();
             Close();
         }
-
         private void ChoosePowerful_MouseEnter(object sender, MouseEventArgs e)
         {
             ChoosePowerful.Background = Brushes.Black;
         }
-
         private void ChoosePowerful_MouseLeave(object sender, MouseEventArgs e)
         {
             ChoosePowerful.Background = Brushes.Red;

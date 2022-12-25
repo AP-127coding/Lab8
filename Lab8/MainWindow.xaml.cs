@@ -29,28 +29,28 @@ namespace Lab8
         RotateTransform up = new RotateTransform(0);
         RotateTransform down = new RotateTransform(180);
         System.Windows.Threading.DispatcherTimer formTimer = new System.Windows.Threading.DispatcherTimer();
-        Image[,] im = new Image[12, 12];
+        Image[,] im = new Image[12, 12]; // массив изображений карты
         
-        public MainWindow()
+        public MainWindow() // конструктор
         {
             InitializeComponent();
 
         }
-        public MainWindow(Tank t1,Tank t2,Map map)
+        public MainWindow(Tank t1,Tank t2,Map map) // конструктор
         {
             this.map = map;
             tank1 = t1;
             tank2 = t2;
             InitializeComponent();
         }
-        public MainWindow(Tank t1, Tank t2)
+        public MainWindow(Tank t1, Tank t2)  // конструктор
         {
             tank1 = t1;
             tank2 = t2;
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e) // сериализация 
         {
             Grid.SetColumn(tankplayer1, tank1.Y);
             Grid.SetRow(tankplayer1, tank1.X);
@@ -118,13 +118,13 @@ namespace Lab8
                 }
             }
             
-            formTimer.Interval = new TimeSpan(100);
+            formTimer.Interval = new TimeSpan(100); // таймер для проверки состояния игры 
             formTimer.Start();
             formTimer.Tick += new EventHandler(FormTimer_Tick);
         }
         private void FormTimer_Tick(object sender, EventArgs e)
         {
-            if (tank1.HP <= 0)
+            if (tank1.HP <= 0) // условие окончания игры 
             {
                 MessageBox.Show("GAME OVER!\nPlayer 2 Win", "GAME", MessageBoxButton.OK, MessageBoxImage.Information);
                 Menu menu = new Menu();
@@ -132,7 +132,7 @@ namespace Lab8
                 formTimer.Stop();
                 Close();
             }
-            if (tank2.HP <= 0)
+            if (tank2.HP <= 0) // условие окончания игры 
             {
                 MessageBox.Show("GAME OVER!\nPlayer 1 Win", "GAME", MessageBoxButton.OK, MessageBoxImage.Information);
                 Menu menu = new Menu();
@@ -141,7 +141,7 @@ namespace Lab8
                 Close();
             }
         }
-        private void Window_KeyDown(object sender, KeyEventArgs e)
+        private void Window_KeyDown(object sender, KeyEventArgs e) // реализация управления 
         {
             if (e.Key == Key.X)
             {
@@ -249,7 +249,6 @@ namespace Lab8
             }
 
         }
-
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();

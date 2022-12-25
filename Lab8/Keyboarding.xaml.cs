@@ -17,36 +17,31 @@ namespace Lab8
     /// <summary>
     /// Логика взаимодействия для Keyboarding.xaml
     /// </summary>
-    public partial class Keyboarding : Window
+    public partial class Keyboarding : Window // окно для управления танками
     {
         Menu menu = new Menu();
-        public Keyboarding(Menu menu)
+        public Keyboarding(Menu menu) // конструктор
         {
             this.menu = menu;
             InitializeComponent();
         }
-
         private void BackToMenu_MouseEnter(object sender, MouseEventArgs e)
         {
             BackToMenu.Background = Brushes.Black;
         }
-
         private void BackToMenu_MouseLeave(object sender, MouseEventArgs e)
         {
             BackToMenu.Background = Brushes.Red;
         }
-
         private void BackToMenu_MouseDown(object sender, MouseButtonEventArgs e)
         {
             menu.Show();
             Close();
         }
-
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)

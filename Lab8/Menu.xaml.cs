@@ -26,6 +26,7 @@ namespace Lab8
         Map map = new Map();
         public Menu ()
         {
+            InitializeComponent();
             try
             {
                 tank1 = Program.TankSerialisation(tank1, true);
@@ -34,10 +35,10 @@ namespace Lab8
             }
             catch (Exception)
             {
-                //Continue.IsEnabled = false;
-                //Continue.Foreground = Brushes.Gray;
+                Continue.IsEnabled = false;
+                Continue.Foreground = Brushes.Gray;
             }
-            InitializeComponent();
+            
         }
         public Menu(MainWindow window, Tank t1, Tank t2,Map map)
         {

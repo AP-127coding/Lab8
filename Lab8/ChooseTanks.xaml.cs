@@ -94,6 +94,7 @@ namespace Lab8
             }
                 if (player1 == false)
                 tank2 = new PowerfulTank(10, 10, 3);
+                
             MainWindow main = new MainWindow(tank1, tank2);
             main.Show();
             Close();

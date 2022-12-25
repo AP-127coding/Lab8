@@ -129,7 +129,7 @@ namespace Lab8
     public class Grass : Environment // трава (не меняется)
     {
 
-        public Grass() : base(true, 0, 0, false)
+        public Grass() : base(true, -1, 0, false)
         {
 
         }
@@ -137,7 +137,7 @@ namespace Lab8
     [Serializable]
     public partial class Glass : Environment // стекло
     {
-        public Glass() : base(false, 50, 0, true)
+        public Glass() : base(false, 1, 0, true)
         {
 
         }
@@ -146,7 +146,7 @@ namespace Lab8
     [Serializable]
     public class Lava : Environment // лава (не меняется)
     {
-        public Lava() : base(true, 0, 15, true)
+        public Lava() : base(true, -1, 15, true)
         {
 
         }
@@ -179,6 +179,14 @@ namespace Lab8
         {brick, lava, lava, defaults, defaults, grass, grass, grass, grass, brick, defaults, brick},
         {brick, brick, brick, brick, brick, brick, brick, brick, brick, brick, brick, brick}
         };
+        public Map()
+        {
+            b18 = new Beton(); b17 = new Beton(); b27 = new Beton(); b23 = new Beton(); b37 = new Beton(); b35 = new Beton(); b34 = new Beton(); b33 = new Beton();
+            b32 = new Beton(); b47 = new Beton(); b46 = new Beton(); b45 = new Beton(); b44 = new Beton(); b43 = new Beton(); b78 = new Beton(); b77 = new Beton(); b76 = new Beton();
+            b75 = new Beton(); b74 = new Beton(); b73 = new Beton(); b87 = new Beton(); b86 = new Beton(); b85 = new Beton(); b83 = new Beton(); b97 = new Beton(); b93 = new Beton();
+            b92 = new Beton(); b107 = new Beton(); b106 = new Beton(); b105 = new Beton(); b104 = new Beton(); b103 = new Beton();
+            g56 = new Glass(); g66 = new Glass(); g55 = new Glass(); g65 = new Glass();
+        }
         public partial Environment GetEnvironments(int x, int y);
     }
 }

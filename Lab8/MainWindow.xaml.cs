@@ -36,16 +36,26 @@ namespace Lab8
             InitializeComponent();
 
         }
-        public MainWindow(Tank t1,Tank t2)
+        public MainWindow(Tank t1,Tank t2,Map map)
+        {
+            this.map = map;
+            tank1 = t1;
+            tank2 = t2;
+            InitializeComponent();
+        }
+        public MainWindow(Tank t1, Tank t2)
         {
             tank1 = t1;
             tank2 = t2;
             InitializeComponent();
         }
-        
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            Grid.SetColumn(tankplayer1, tank1.Y);
+            Grid.SetRow(tankplayer1, tank1.X);
+            Grid.SetColumn(tankplayer2, tank2.Y);
+            Grid.SetRow(tankplayer2, tank2.X);
             if (tank1.GetType().Name == "BaseTank")
             {
                 tankplayer1.Source = basetank.Source;
@@ -85,12 +95,26 @@ namespace Lab8
             { brick10_0, lava10_1,lava10_2,wood,wood,grass,grass,grass,grass,brick10_9,wood, brick10_11},
             { brick11_0, brick11_1,brick11_2,brick11_3,brick11_4,brick11_5,brick11_6,brick11_7,brick11_8,brick11_9,brick11_10, brick11_11}
             };
-
+            
             for (int i = 0; i < 12; i++)
             {
                 for (int j = 0; j < 12; j++)
                 {
                     im[i, j] = images[i, j];
+                }
+            }
+            for (int i = 1; i < 11; i++)
+            {
+                for (int j = 1; j < 11; j++)
+                {
+                    if (map.environments[i, j].EnvHP <= 60 && map.environments[i, j].EnvHP > 1)
+                    {
+                        im[i, j].Source = damaged_beton.Source;
+                    }
+                    if (map.environments[i, j].EnvHP == 0)
+                    {
+                        im[i, j].Source = wood.Source;
+                    }
                 }
             }
             
@@ -154,7 +178,7 @@ namespace Lab8
             }
             if (e.Key == Key.Escape)
             {
-                Menu menu = new Menu(this,tank1,tank2);
+                Menu menu = new Menu(this,tank1,tank2,map);
                 menu.Show();
                 Hide();
             }

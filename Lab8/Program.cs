@@ -12,12 +12,13 @@ namespace Lab8
 {
     public abstract partial class Tank
     {
-        public int Power { get { return power; } }
+        public int Power { get { return power; } set { } }
         public int X { get { return x; } }
         public int Y { get { return y; } }
-        public int HP { get { return hp; } }
-        public bool Vision { get { return vision; } }
+        public int HP { get { return hp; } set { } }
+        public bool Vision { get { return vision; } set { } }
         public int Direction { get { return direction; } }
+        public string Color { get { return color; } }
         public partial int[] Shoot(Map map, Tank tank) // стрельба танка
         {
             int[] mas = new int[2]; // массив для возврата координаты клетки
@@ -326,32 +327,32 @@ namespace Lab8
         {
             if (flag == true)
             {
-                FileStream readcell1file = File.OpenRead("celltank1.json");
-                DataContractJsonSerializer celldata = new DataContractJsonSerializer(map.environments[x, y].GetType());
-                map.environments[x, y] = celldata.ReadObject(readcell1file) as Environment;
+                for (int i = 1; i < 11; i++)
+                {
+                    for (int j = 1; j < 11; j++)
+                    {
+                        string celltank = "celltank" + Convert.ToString(i) + "_" + Convert.ToString(j) + ".json";
+                        FileStream readcell1file = File.OpenRead(celltank);
+                        DataContractJsonSerializer celldata = new DataContractJsonSerializer(map.environments[i, j].GetType());
+                        map.environments[i, j] = celldata.ReadObject(readcell1file) as Environment;
+                        readcell1file.Close();
+                    }
+                }
 
-                FileStream readcell2file = File.OpenRead("celltank1.json");
-                DataContractJsonSerializer celldata2 = new DataContractJsonSerializer(map.environments[x2, y2].GetType());
-                map.environments[x, y] = celldata2.ReadObject(readcell2file) as Environment;
-
-                readcell1file.Close();
-                readcell2file.Close();
                 return map;
             }
 
-            FileStream celltankfile = File.Create("celltank1.json");
-            FileStream celltank2file = File.Create("celltank2.json");
-
-
-            DataContractJsonSerializer celltankdata = new DataContractJsonSerializer(map.environments[x, y].GetType());
-            celltankdata.WriteObject(celltankfile, map.environments[x, y]);
-
-            DataContractJsonSerializer celltank2data = new DataContractJsonSerializer(map.environments[x2, y2].GetType());
-            celltank2data.WriteObject(celltank2file, map.environments[x2, y2]);
-
-            celltank2file.Close();
-            celltankfile.Close();
-
+            for (int i = 1; i < 11; i++)
+            {
+                for (int j = 1; j < 11; j++)
+                {
+                    string celltank = "celltank" + Convert.ToString(i) + "_" + Convert.ToString(j) + ".json";
+                    FileStream celltankfile = File.Create(celltank);
+                    DataContractJsonSerializer celltankdata = new DataContractJsonSerializer(map.environments[i, j].GetType());
+                    celltankdata.WriteObject(celltankfile, map.environments[i, j]);
+                    celltankfile.Close();
+                }
+            }
             return map;
         }
         static public Tank TankSerialisation(Tank tank, bool flag)
@@ -359,10 +360,37 @@ namespace Lab8
             if (flag == true)
             {
                 FileStream tankdfile = File.OpenRead("tank.json");
-                DataContractJsonSerializer tankddata = new DataContractJsonSerializer(tank.GetType());
+                DataContractJsonSerializer tankddata = new DataContractJsonSerializer(typeof(BaseTank));
                 Tank tankd1 = tankddata.ReadObject(tankdfile) as Tank;
-                tankdfile.Close();
-                return tankd1;
+                if (tankd1.Color == "Green")
+                {
+                    Tank tank1 = new SpeedTank(tankd1.X, tankd1.Y, tankd1.Direction);
+                    tank1.Vision = tankd1.Vision;
+                    tank1.HP = tankd1.HP;
+                    tank1.Power = tankd1.Power;
+                    tankdfile.Close();
+                    return tank1;
+                }
+                if (tankd1.Color == "Orange")
+                {
+                    Tank tank1 = new BaseTank(tankd1.X, tankd1.Y, tankd1.Direction);
+                    tank1.Vision = tankd1.Vision;
+                    tank1.HP = tankd1.HP;
+                    tank1.Power = tankd1.Power;
+                    tankdfile.Close();
+                    return tank1;
+                }
+                if (tankd1.Color == "Black")
+                {
+                    Tank tank1 = new PowerfulTank(tankd1.X, tankd1.Y, tankd1.Direction);
+                    tank1.Vision = tankd1.Vision;
+                    tank1.HP = tankd1.HP;
+                    tank1.Power = tankd1.Power;
+                    tankdfile.Close();
+                    return tank1;
+                }
+                
+                
             }
             FileStream tankfile = File.Create("tank.json");
             DataContractJsonSerializer tankdata = new DataContractJsonSerializer(tank.GetType());
@@ -373,13 +401,41 @@ namespace Lab8
         }
         static public Tank Tank2Serialisation(Tank tank2, bool flag)
         {
+            
             if (flag == true)
             {
                 FileStream tankd2file = File.OpenRead("tank2.json");
-                DataContractJsonSerializer tank2ddata = new DataContractJsonSerializer(tank2.GetType());
+                DataContractJsonSerializer tank2ddata = new DataContractJsonSerializer(typeof(BaseTank));
                 Tank tankd2 = tank2ddata.ReadObject(tankd2file) as Tank;
-                tankd2file.Close();
-                return tankd2;
+                if (tankd2.Color == "Green")
+                {
+                    Tank tank22 = new SpeedTank(tankd2.X, tankd2.Y, tankd2.Direction);
+                    tank22.Vision = tankd2.Vision;
+                    tank22.HP = tankd2.HP;
+                    tank22.Power = tankd2.Power;
+                    tankd2file.Close();
+                    return tank22;
+                }
+                if (tankd2.Color == "Orange")
+                {
+                    Tank tank22 = new BaseTank(tankd2.X, tankd2.Y, tankd2.Direction);
+                    tank22.Vision = tankd2.Vision;
+                    tank22.HP = tankd2.HP;
+                    tank22.Power = tankd2.Power;
+                    tankd2file.Close();
+                    return tank22;
+                }
+                if (tankd2.Color == "Black")
+                {
+                    Tank tank22 = new PowerfulTank(tankd2.X, tankd2.Y, tankd2.Direction);
+                    tank22.Vision = tankd2.Vision;
+                    tank22.HP = tankd2.HP;
+                    tank22.Power = tankd2.Power;
+                    tankd2file.Close();
+                    return tank22;
+                }
+
+              
             }
             FileStream tank2file = File.Create("tank2.json");
             DataContractJsonSerializer tank2data = new DataContractJsonSerializer(tank2.GetType());

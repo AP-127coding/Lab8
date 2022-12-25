@@ -23,12 +23,25 @@ namespace Lab8
         Tank tank1;
         Tank tank2;
         MainWindow main = new MainWindow();
+        Map map = new Map();
         public Menu ()
         {
+            try
+            {
+                tank1 = Program.TankSerialisation(tank1, true);
+                tank2 = Program.Tank2Serialisation(tank2, true);
+                map = Program.MapSerialisation(map, tank1.X, tank1.Y, tank2.X, tank2.Y, true);
+            }
+            catch (Exception)
+            {
+                //Continue.IsEnabled = false;
+                //Continue.Foreground = Brushes.Gray;
+            }
             InitializeComponent();
         }
-        public Menu(MainWindow window, Tank t1, Tank t2)
+        public Menu(MainWindow window, Tank t1, Tank t2,Map map)
         {
+            this.map = map;
             main = window;
             tank1 = t1;
             tank2 = t2;
@@ -76,7 +89,7 @@ namespace Lab8
 
         private void Continue_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MainWindow mainw = new MainWindow(tank1, tank2);
+            MainWindow mainw = new MainWindow(tank1, tank2,map);
             mainw.Show();
             Close();
         }
@@ -85,7 +98,7 @@ namespace Lab8
         {
             Program.TankSerialisation(tank1, false);
             Program.Tank2Serialisation(tank2, false);
-            
+            Program.MapSerialisation(map, tank1.X, tank1.Y, tank2.X, tank2.Y, false);
             Application.Current.Shutdown();
         }
 
@@ -113,15 +126,16 @@ namespace Lab8
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                tank1 = Program.TankSerialisation(tank1, true);
-                tank2 = Program.Tank2Serialisation(tank2, true);
-            }
-            catch(Exception)
-            {
-
-            }
+            //try
+            //{
+            //    tank1 = Program.TankSerialisation(tank1, true);
+            //    tank2 = Program.Tank2Serialisation(tank2, true);
+            //}
+            //catch(Exception)
+            //{
+            //    Continue.IsEnabled = false;
+            //    Continue.Foreground = Brushes.Gray;
+            //}
          }
     }
 }
